@@ -11,6 +11,9 @@ router.get('/', getBooks)
 // GET by ID
 router.get('/:id', getBook)
 
+// ruta por post 
+router.post('/create', createBook)
+
 // POST Create a Book
 router.post('/', coverUploader.single('cover'), setCover, createBook)
 
